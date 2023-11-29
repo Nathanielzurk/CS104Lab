@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+   <script>
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "" || x == null) {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+      </script>
+      </head>
+      <body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+    Name: <input type="text" name="fname"><br><br>
+   Last Name: <input type="text" Last name="fname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  </script>
+  
+  
+  <h2 id="demo"></h2>
+  
+  <script>
+  const myTimeout = setTimeout(myGreeting, 3000);
+  
+  function myGreeting() {
+    document.getElementById("demo").innerHTML = "Please fill out name"
+  }
+
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hello World!");
+});
+
+</script>
+
+</body>
+</html>
